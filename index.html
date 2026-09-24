@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iO VibeCode Marketplace</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" type="image/svg+xml" href="brand assets/iO_Avatar.svg">
+</head>
+<body>
+
+<!-- HEADER -->
+<header class="site-header">
+    <div class="container">
+        <a href="index.html" class="header-logo">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 881 599" fill="#fff">
+                <path d="M135.15,219.96h0L0,523.52l152.19,67.76,67.39-151.37c37.42-84.05-.38-182.53-84.43-219.96Z"/>
+                <path d="M50.68,0c-37.42,84.05.38,182.53,84.43,219.96l67.76-152.19L50.68,0Z"/>
+                <path d="M594.5,26c-158.22,0-286.5,128.27-286.5,286.5s128.28,286.5,286.5,286.5,286.5-128.27,286.5-286.5S752.73,26,594.5,26ZM594.5,464.51c-83.95,0-152.01-68.06-152.01-152.01s68.05-152.02,152.01-152.02,152.01,68.07,152.01,152.02-68.05,152.01-152.01,152.01Z"/>
+            </svg>
+            <span class="logo-divider"></span>
+            <span class="logo-text">VibeCode Marketplace</span>
+        </a>
+        <nav class="header-nav">
+            <a href="index.html">Browse</a>
+            <a href="#">About</a>
+            <a href="#">Help</a>
+        </nav>
+    </div>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+    <div class="container">
+        <div class="hero-badge">
+            <span class="badge-dot"></span>
+            Internal Platform
+        </div>
+        <h1>iO VibeCode Marketplace</h1>
+        <p class="subtitle">made possible with <em>Bonzai</em></p>
+        <div class="search-wrapper">
+            <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="11" cy="11" r="8"/>
+                <line x1="21" y1="21" x2="16.65" y2="16.65"/>
+            </svg>
+            <input type="text" class="search-bar" id="searchInput" placeholder="Search programs, projects, or tools…">
+        </div>
+    </div>
+</section>
+
+<!-- MAIN CONTENT -->
+<main class="main-content">
+    <div class="container">
+        <div class="content-layout">
+
+            <!-- LEFT: Projects -->
+            <div class="projects-area">
+                <div class="section-header">
+                    <h2>Projects</h2>
+                    <span class="project-count">3 projects available</span>
+                </div>
+
+                <div class="projects-grid" id="projectsGrid">
+
+                    <!-- Card 1: Ads App -->
+                    <a href="ads-app.html" class="project-card" data-name="Ads App" data-desc="advertising management platform SaaS">
+                        <div class="card-image">
+                            <img src="Images/Headers/adds_app_header.jpg" alt="Ads App header">
+                        </div>
+                        <div class="card-body">
+                            <span class="card-tag">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="12" height="12"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18"/><path d="M9 21V9"/></svg>
+                                SaaS Platform
+                            </span>
+                            <h3 class="card-title">Ads App</h3>
+                            <p class="card-description">An internal advertising management platform for a marketing agency. A SaaS web application that allows an operator to manage and monitor the advertising campaigns of multiple clients from a single console.</p>
+                            <div class="card-creators">
+                                <div class="avatar-stack">
+                                    <img class="avatar" src="Images/Personen/Bo.png" alt="Bo">
+                                    <img class="avatar" src="Images/Personen/Barry.png" alt="Barry">
+                                </div>
+                                <div class="creator-names">by <span>Bo</span> &amp; <span>Barry</span></div>
+                            </div>
+                        </div>
+                    </a>
+
+                    <!-- Card 2: Traveling Salesman Solver -->
+                    <a href="traveling-salesman.html" class="project-card" data-name="Traveling Salesman Solver" data-desc="route optimization Google Maps workflow">
+                        <div class="card-image">
+                            <img src="Images/Headers/saleman_header.jpg" alt="Traveling Salesman header">
+                        </div>
+                        <div class="card-body">
+                            <span class="card-tag">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="12" height="12"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+                                Workflow
+                            </span>
+                            <h3 class="card-title">Traveling Salesman Solver</h3>
+                            <p class="card-description">A workflow combined with back-end system integrations and Google Maps to solve traveling salesman problems. Determines who can best visit which location and when.</p>
+                            <div class="card-creators">
+                                <div class="avatar-stack">
+                                    <img class="avatar" src="Images/Personen/aljosja.jpg" alt="Aljosja">
+                                    <img class="avatar" src="Images/Personen/Bo.png" alt="Bo">
+                                </div>
+                                <div class="creator-names">by <span>Aljosja</span> &amp; <span>Bo</span></div>
+                            </div>
+                        </div>
+                    </a>
+
+                    <!-- Card 3: Beacon -->
+                    <a href="beacon.html" class="project-card" data-name="Beacon" data-desc="website step recorder dataLayer inspection">
+                        <div class="card-image">
+                            <img src="Images/Headers/nat-Qerg85B7JDI-unsplash.jpg" alt="Beacon header">
+                        </div>
+                        <div class="card-body">
+                            <span class="card-tag">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="12" height="12"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+                                Analytics Tool
+                            </span>
+                            <h3 class="card-title">Beacon</h3>
+                            <p class="card-description">A program that lets users record steps on a website and automatically replay them. At each step, it reads the dataLayer and shows which measurement points are detected.</p>
+                            <div class="card-creators">
+                                <div class="avatar-stack">
+                                    <img class="avatar" src="Images/Personen/Barry.png" alt="Barry">
+                                    <img class="avatar" src="Images/Personen/aljosja.jpg" alt="Aljosja">
+                                </div>
+                                <div class="creator-names">by <span>Barry</span> &amp; <span>Aljosja</span></div>
+                            </div>
+                        </div>
+                    </a>
+
+                </div>
+            </div>
+
+
+            <!-- RIGHT: FAQ Sidebar -->
+            <aside class="sidebar">
+                <div class="sidebar-card">
+                    <div class="sidebar-header">
+                        <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="12" r="10"/>
+                            <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/>
+                            <line x1="12" y1="17" x2="12.01" y2="17"/>
+                        </svg>
+                        <h3>Frequently Asked Questions</h3>
+                    </div>
+                    <ul class="faq-list">
+                        <li class="faq-item">
+                            <button class="faq-question" onclick="this.parentElement.classList.toggle('open')">
+                                How do I install a program from GitLab?
+                                <svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+                            </button>
+                            <div class="faq-answer"><div class="faq-answer-inner">Navigate to the project's GitLab repository using the link on its detail page. Follow the README instructions to clone the repo and install dependencies.</div></div>
+                        </li>
+                        <li class="faq-item">
+                            <button class="faq-question" onclick="this.parentElement.classList.toggle('open')">
+                                Who do I contact about support on a program or tool?
+                                <svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+                            </button>
+                            <div class="faq-answer"><div class="faq-answer-inner">Each project page has a "Contact &amp; Support" section with the name and email of the support person. Reach out to them directly.</div></div>
+                        </li>
+                        <li class="faq-item">
+                            <button class="faq-question" onclick="this.parentElement.classList.toggle('open')">
+                                Can I make changes to these programs?
+                                <svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+                            </button>
+                            <div class="faq-answer"><div class="faq-answer-inner">Yes! Fork the repository, make your changes, and submit a merge request. Coordinate with the project maintainer before making big modifications.</div></div>
+                        </li>
+
+                        <li class="faq-item">
+                            <button class="faq-question" onclick="this.parentElement.classList.toggle('open')">
+                                How do I connect Bonzai to these tools?
+                                <svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+                            </button>
+                            <div class="faq-answer"><div class="faq-answer-inner">Check the project's detail page for Bonzai integration instructions. Use the Bonzai API with your iO credentials — see the internal wiki for setup guides.</div></div>
+                        </li>
+                        <li class="faq-item">
+                            <button class="faq-question" onclick="this.parentElement.classList.toggle('open')">
+                                How can I add my project or program?
+                                <svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+                            </button>
+                            <div class="faq-answer"><div class="faq-answer-inner">Click the "Add program / project" button and fill out the submission form with a project name, description, header image, GitLab link, and contact info.</div></div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="sidebar-cta">
+                    <button class="btn-primary" onclick="openModal()">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+                        Add program / project
+                    </button>
+                </div>
+            </aside>
+
+        </div>
+    </div>
+</main>
+
+<!-- ADD PROJECT MODAL -->
+<div class="modal-overlay" id="addProjectModal">
+    <div class="modal-container">
+        <div class="modal-header">
+            <h2>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+                Add program / project
+            </h2>
+            <button class="modal-close" onclick="closeModal()">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+            </button>
+        </div>
+        <div class="modal-body">
+            <form id="addProjectForm" novalidate>
+                <div class="form-group">
+                    <label class="form-label" for="projectName">Program / project name <span class="required">*</span></label>
+                    <input type="text" class="form-input" id="projectName" placeholder="e.g. Ads App" required>
+                </div>
+                <div class="form-group">
+                    <label class="form-label" for="projectType">What describes your project best? <span class="required">*</span></label>
+                    <select class="form-select" id="projectType" required>
+                        <option value="" disabled selected>Select a category…</option>
+                        <option value="software">Software</option>
+                        <option value="workflow">Workflow</option>
+                        <option value="autonomous-agent">Autonomous Agent</option>
+                        <option value="browser-extension">Browser Extension</option>
+                        <option value="api-integration">API / Integration</option>
+                        <option value="data-pipeline">Data Pipeline</option>
+                        <option value="dashboard">Dashboard / Reporting Tool</option>
+                        <option value="devops-tool">DevOps Tool</option>
+                        <option value="internal-library">Internal Library / SDK</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label class="form-label" for="bannerUrl">Banner image URL</label>
+                    <input type="url" class="form-input" id="bannerUrl" placeholder="https://unsplash.com/photos/… or direct image URL" oninput="previewBanner(this.value)">
+                    <span class="form-hint">Paste an Unsplash link or a direct image URL for your project header</span>
+                    <div class="banner-preview" id="bannerPreview"><img id="bannerPreviewImg" src="" alt="Banner preview"></div>
+                </div>
+                <div class="form-group">
+                    <label class="form-label" for="shortDesc">Short description <span class="required">*</span></label>
+                    <textarea class="form-textarea" id="shortDesc" rows="3" placeholder="Briefly describe what your project does…" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label class="form-label" for="audience">Who is this for?</label>
+                    <textarea class="form-textarea" id="audience" rows="2" placeholder="Describe the target audience or team…"></textarea>
+                </div>
+                <div class="form-group">
+                    <label class="form-label" for="dependencies">Dependencies &amp; Requirements</label>
+                    <textarea class="form-textarea" id="dependencies" rows="2" placeholder="e.g. Node.js 18+, Docker, Google Ads API key…"></textarea>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label class="form-label" for="contactName">Contact person <span class="required">*</span></label>
+                        <input type="text" class="form-input" id="contactName" placeholder="Full name" required>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label" for="contactEmail">Contact email <span class="required">*</span></label>
+                        <input type="email" class="form-input" id="contactEmail" placeholder="name@iodigital.com" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="form-label" for="gitlabUrl">Link to GitLab</label>
+                    <input type="url" class="form-input" id="gitlabUrl" placeholder="https://gitlab.io.nl/…">
+                </div>
+                <div class="form-group">
+                    <label class="form-label">Project folder (.zip)</label>
+                    <div class="file-upload-area" id="fileUploadArea">
+                        <svg class="upload-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" y1="3" x2="12" y2="15"/></svg>
+                        <div class="upload-text"><span>Click to upload</span> or drag and drop</div>
+                        <div class="file-name" id="fileName"></div>
+                        <input type="file" accept=".zip" id="projectZip" onchange="handleFileSelect(this)">
+                    </div>
+                    <span class="form-hint">Upload a .zip archive of your project files</span>
+                </div>
+                <div class="form-footer">
+                    <button type="button" class="btn-secondary" onclick="closeModal()">Cancel</button>
+                    <button type="submit" class="btn-primary btn-submit">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="18" height="18"><polyline points="20 6 9 17 4 12"/></svg>
+                        Submit project
+                    </button>
+                </div>
+            </form>
+            <div class="form-success" id="formSuccess">
+                <div class="success-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                </div>
+                <h3>Project submitted!</h3>
+                <p>Your project has been received and will be reviewed by the marketplace admins. You'll receive a confirmation email shortly.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- FOOTER -->
+<footer class="site-footer">
+    <div class="container">
+        <div class="footer-logo">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 881 599" fill="#fff">
+                <path d="M135.15,219.96h0L0,523.52l152.19,67.76,67.39-151.37c37.42-84.05-.38-182.53-84.43-219.96Z"/>
+                <path d="M50.68,0c-37.42,84.05.38,182.53,84.43,219.96l67.76-152.19L50.68,0Z"/>
+                <path d="M594.5,26c-158.22,0-286.5,128.27-286.5,286.5s128.28,286.5,286.5,286.5,286.5-128.27,286.5-286.5S752.73,26,594.5,26ZM594.5,464.51c-83.95,0-152.01-68.06-152.01-152.01s68.05-152.02,152.01-152.02,152.01,68.07,152.01,152.02-68.05,152.01-152.01,152.01Z"/>
+            </svg>
+        </div>
+        <span class="footer-text">&copy; 2026 iO Digital — VibeCode Marketplace</span>
+    </div>
+</footer>
+
+<script>
+/* Search filter */
+document.getElementById('searchInput').addEventListener('input', function() {
+    var q = this.value.toLowerCase().trim();
+    var cards = document.querySelectorAll('.project-card');
+    var v = 0;
+    cards.forEach(function(c) {
+        var match = !q || c.textContent.toLowerCase().includes(q);
+        c.style.display = match ? '' : 'none';
+        if (match) v++;
+    });
+    document.querySelector('.project-count').textContent = v + ' project' + (v !== 1 ? 's' : '') + ' available';
+});
+
+/* Modal */
+var modal = document.getElementById('addProjectModal');
+var form = document.getElementById('addProjectForm');
+var success = document.getElementById('formSuccess');
+
+function openModal() {
+    modal.classList.add('active');
+    document.body.style.overflow = 'hidden';
+    form.style.display = '';
+    success.classList.remove('visible');
+    form.reset();
+    document.getElementById('bannerPreview').classList.remove('visible');
+    document.getElementById('fileName').textContent = '';
+    document.getElementById('fileUploadArea').classList.remove('has-file');
+    document.querySelectorAll('.invalid').forEach(function(el) { el.classList.remove('invalid'); });
+}
+
+function closeModal() {
+    modal.classList.remove('active');
+    document.body.style.overflow = '';
+}
+
+/* Close on backdrop click */
+modal.addEventListener('click', function(e) {
+    if (e.target === modal) closeModal();
+});
+
+/* Close on Escape */
+document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape' && modal.classList.contains('active')) closeModal();
+});
+
+/* Banner preview */
+function previewBanner(url) {
+    var preview = document.getElementById('bannerPreview');
+    var img = document.getElementById('bannerPreviewImg');
+    if (url && (url.startsWith('http://') || url.startsWith('https://'))) {
+        img.src = url;
+        img.onload = function() { preview.classList.add('visible'); };
+        img.onerror = function() { preview.classList.remove('visible'); };
+    } else {
+        preview.classList.remove('visible');
+    }
+}
+
+/* File upload */
+function handleFileSelect(input) {
+    var area = document.getElementById('fileUploadArea');
+    var nameEl = document.getElementById('fileName');
+    if (input.files && input.files[0]) {
+        area.classList.add('has-file');
+        nameEl.textContent = input.files[0].name;
+    } else {
+        area.classList.remove('has-file');
+        nameEl.textContent = '';
+    }
+}
+
+/* Form submit */
+form.addEventListener('submit', function(e) {
+    e.preventDefault();
+    var required = form.querySelectorAll('[required]');
+    var valid = true;
+    required.forEach(function(el) {
+        el.classList.remove('invalid');
+        if (!el.value.trim()) { el.classList.add('invalid'); valid = false; }
+    });
+    if (!valid) {
+        form.querySelector('.invalid').focus();
+        return;
+    }
+    form.style.display = 'none';
+    success.classList.add('visible');
+});
+</script>
+</body>
+</html>
+
