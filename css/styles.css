@@ -246,6 +246,22 @@ h1,h2,h3,h4,h5,h6 { line-height: 1.2; font-weight: 700; }
 .form-success h3 { font-size:1.25rem; font-weight:700; color:var(--io-black); margin-bottom:8px; }
 .form-success p { font-size:.875rem; color:var(--io-gray-500); line-height:1.6; }
 
+/* SPOTLIGHT */
+.spotlight-section { margin-bottom:32px; }
+.spotlight-header { margin-bottom:16px; }
+.spotlight-badge { display:inline-flex; align-items:center; gap:6px; background:var(--io-blue-light); color:var(--io-blue); border:1px solid rgba(0,0,210,.15); border-radius:100px; padding:5px 16px; font-size:.75rem; font-weight:700; letter-spacing:.04em; text-transform:uppercase; }
+.spotlight-badge svg { flex-shrink:0; }
+.spotlight-card.spotlight-card { display:block; background:var(--io-white); border-radius:var(--radius-lg); overflow:hidden; box-shadow:var(--shadow-md); border:1.5px solid rgba(0,0,210,.12); transition:all var(--transition); text-decoration:none; color:inherit; cursor:pointer; }
+.spotlight-card.spotlight-card:hover { transform:translateY(-4px); box-shadow:var(--shadow-xl); border-color:rgba(0,0,210,.25); }
+.spotlight-image { width:100%; height:220px; overflow:hidden; }
+.spotlight-image img { width:100%; height:100%; object-fit:cover; transition:transform var(--transition); }
+.spotlight-card:hover .spotlight-image img { transform:scale(1.03); }
+.spotlight-body { padding:24px 28px 28px; }
+.spotlight-title { font-size:1.5rem; font-weight:800; color:var(--io-black); margin:8px 0 12px; letter-spacing:-.01em; }
+.spotlight-description { font-size:.925rem; color:var(--io-gray-500); line-height:1.7; margin-bottom:16px; }
+.spotlight-card .card-tag { display:inline-flex; align-items:center; gap:5px; background:var(--io-blue-light); color:var(--io-blue); padding:4px 10px; border-radius:6px; font-size:.7rem; font-weight:700; text-transform:uppercase; letter-spacing:.03em; width:fit-content; margin-bottom:0; }
+.spotlight-card .card-creators { display:flex; align-items:center; gap:10px; }
+
 /* RESPONSIVE */
 @media (max-width:1024px) {
     .content-layout { grid-template-columns:1fr; }
@@ -255,6 +271,10 @@ h1,h2,h3,h4,h5,h6 { line-height: 1.2; font-weight: 700; }
 @media (max-width:768px) {
     .hero h1 { font-size:2rem; }
     .hero .subtitle { font-size:1rem; }
+    .spotlight-image { height:180px; }
+    .spotlight-title { font-size:1.25rem; }
+    .spotlight-description { font-size:.85rem; }
+    .spotlight-body { padding:20px 20px 24px; }
     .project-card { flex-direction:column; }
     .project-card .card-image { width:100%; min-width:unset; height:180px; }
     .detail-hero { height:260px; }
