@@ -64,16 +64,33 @@
                             Spotlight
                         </span>
                     </div>
-                    <a href="ads-app.html" class="spotlight-card project-card" data-name="Ads App" data-desc="advertising management platform SaaS">
+                    <a href="ads-app.html" class="spotlight-card project-card" data-name="Ads App" data-desc="advertising management platform SaaS" data-category="client" data-rating="4.5" data-date="2026-06-15">
                         <div class="spotlight-image">
                             <img src="Images/Headers/adds_app_header.jpg" alt="Ads App header">
                         </div>
                         <div class="spotlight-body">
-                            <span class="card-tag">
-                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="12" height="12"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18"/><path d="M9 21V9"/></svg>
-                                SaaS Platform
-                            </span>
+                            <div class="card-tags-row">
+                                <span class="card-tag">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="12" height="12"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18"/><path d="M9 21V9"/></svg>
+                                    SaaS Platform
+                                </span>
+                                <span class="category-badge badge-client">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                                    Client
+                                </span>
+                            </div>
                             <h3 class="spotlight-title">Ads App</h3>
+                            <div class="card-rating">
+                                <div class="stars">
+                                    <svg viewBox="0 0 24 24" class="star-filled"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                                    <svg viewBox="0 0 24 24" class="star-filled"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                                    <svg viewBox="0 0 24 24" class="star-filled"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                                    <svg viewBox="0 0 24 24" class="star-filled"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                                    <svg viewBox="0 0 24 24" class="star-empty"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" stroke="currentColor" stroke-width="2" fill="none"/></svg>
+                                </div>
+                                <span class="rating-score">4.5</span>
+                                <span class="rating-count">(18 reviews)</span>
+                            </div>
                             <p class="spotlight-description">An internal advertising management platform for a marketing agency. A SaaS web application that allows an operator to manage and monitor the advertising campaigns of multiple clients from a single console.</p>
                             <div class="card-creators">
                                 <div class="avatar-stack">
@@ -91,19 +108,56 @@
                     <span class="project-count">2 projects available</span>
                 </div>
 
+                <div class="controls-bar">
+                    <div class="filter-group">
+                        <label>Category</label>
+                        <button class="pill-btn active" data-filter="all">All</button>
+                        <button class="pill-btn" data-filter="work">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="12" height="12"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"/></svg>
+                            Work
+                        </button>
+                        <button class="pill-btn" data-filter="client">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="12" height="12"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                            Client
+                        </button>
+                    </div>
+                    <div class="sort-group">
+                        <label>Sort</label>
+                        <button class="pill-btn active" data-sort="recent">Recent</button>
+                        <button class="pill-btn" data-sort="rating">Highest Rated</button>
+                    </div>
+                </div>
+
                 <div class="projects-grid" id="projectsGrid">
 
                     <!-- Card 1: Traveling Salesman Solver -->
-                    <a href="traveling-salesman.html" class="project-card" data-name="Traveling Salesman Solver" data-desc="route optimization Google Maps workflow">
+                    <a href="traveling-salesman.html" class="project-card" data-name="Traveling Salesman Solver" data-desc="route optimization Google Maps workflow" data-category="client" data-rating="4.0" data-date="2026-05-20">
                         <div class="card-image">
                             <img src="Images/Headers/saleman_header.jpg" alt="Traveling Salesman header">
                         </div>
                         <div class="card-body">
-                            <span class="card-tag">
-                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="12" height="12"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
-                                Workflow
-                            </span>
+                            <div class="card-tags-row">
+                                <span class="card-tag">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="12" height="12"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+                                    Workflow
+                                </span>
+                                <span class="category-badge badge-client">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                                    Client
+                                </span>
+                            </div>
                             <h3 class="card-title">Traveling Salesman Solver</h3>
+                            <div class="card-rating">
+                                <div class="stars">
+                                    <svg viewBox="0 0 24 24" class="star-filled"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                                    <svg viewBox="0 0 24 24" class="star-filled"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                                    <svg viewBox="0 0 24 24" class="star-filled"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                                    <svg viewBox="0 0 24 24" class="star-filled"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                                    <svg viewBox="0 0 24 24" class="star-empty"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" stroke="currentColor" stroke-width="2" fill="none"/></svg>
+                                </div>
+                                <span class="rating-score">4.0</span>
+                                <span class="rating-count">(7 reviews)</span>
+                            </div>
                             <p class="card-description">A workflow combined with back-end system integrations and Google Maps to solve traveling salesman problems. Determines who can best visit which location and when.</p>
                             <div class="card-creators">
                                 <div class="avatar-stack">
@@ -116,16 +170,33 @@
                     </a>
 
                     <!-- Card 3: Beacon -->
-                    <a href="beacon.html" class="project-card" data-name="Beacon" data-desc="website step recorder dataLayer inspection">
+                    <a href="beacon.html" class="project-card" data-name="Beacon" data-desc="website step recorder dataLayer inspection" data-category="work" data-rating="4.8" data-date="2026-07-02">
                         <div class="card-image">
                             <img src="Images/Headers/nat-Qerg85B7JDI-unsplash.jpg" alt="Beacon header">
                         </div>
                         <div class="card-body">
-                            <span class="card-tag">
-                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="12" height="12"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
-                                Analytics Tool
-                            </span>
+                            <div class="card-tags-row">
+                                <span class="card-tag">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="12" height="12"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+                                    Analytics Tool
+                                </span>
+                                <span class="category-badge badge-work">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"/></svg>
+                                    Work
+                                </span>
+                            </div>
                             <h3 class="card-title">Beacon</h3>
+                            <div class="card-rating">
+                                <div class="stars">
+                                    <svg viewBox="0 0 24 24" class="star-filled"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                                    <svg viewBox="0 0 24 24" class="star-filled"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                                    <svg viewBox="0 0 24 24" class="star-filled"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                                    <svg viewBox="0 0 24 24" class="star-filled"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                                    <svg viewBox="0 0 24 24" class="star-filled"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                                </div>
+                                <span class="rating-score">4.8</span>
+                                <span class="rating-count">(23 reviews)</span>
+                            </div>
                             <p class="card-description">A program that lets users record steps on a website and automatically replay them. At each step, it reads the dataLayer and shows which measurement points are detected.</p>
                             <div class="card-creators">
                                 <div class="avatar-stack">
@@ -313,23 +384,66 @@
 </footer>
 
 <script>
-/* Search filter */
-document.getElementById('searchInput').addEventListener('input', function() {
-    var q = this.value.toLowerCase().trim();
-    var cards = document.querySelectorAll('.projects-grid .project-card');
+/* ---- Filter / Sort / Search combined logic ---- */
+var activeFilter = 'all';
+var activeSort = 'recent';
+
+function applyFilters() {
+    var q = document.getElementById('searchInput').value.toLowerCase().trim();
+    var grid = document.getElementById('projectsGrid');
+    var cards = Array.from(grid.querySelectorAll('.project-card'));
     var spotlight = document.querySelector('.spotlight-section');
+    var spotlightCard = spotlight ? spotlight.querySelector('.project-card') : null;
     var v = 0;
-    cards.forEach(function(c) {
-        var match = !q || c.textContent.toLowerCase().includes(q);
-        c.style.display = match ? '' : 'none';
-        if (match) v++;
-    });
-    /* Show/hide spotlight based on search */
-    if (spotlight) {
-        var smatch = !q || spotlight.textContent.toLowerCase().includes(q);
-        spotlight.style.display = smatch ? '' : 'none';
+
+    /* Sort cards in DOM */
+    if (activeSort === 'rating') {
+        cards.sort(function(a, b) { return parseFloat(b.dataset.rating) - parseFloat(a.dataset.rating); });
+    } else {
+        cards.sort(function(a, b) { return b.dataset.date.localeCompare(a.dataset.date); });
     }
+    cards.forEach(function(c) { grid.appendChild(c); });
+
+    /* Filter & search */
+    cards.forEach(function(c) {
+        var catMatch = activeFilter === 'all' || c.dataset.category === activeFilter;
+        var searchMatch = !q || c.textContent.toLowerCase().includes(q);
+        var show = catMatch && searchMatch;
+        c.style.display = show ? '' : 'none';
+        if (show) v++;
+    });
+
+    /* Spotlight */
+    if (spotlight && spotlightCard) {
+        var sCat = activeFilter === 'all' || spotlightCard.dataset.category === activeFilter;
+        var sSearch = !q || spotlight.textContent.toLowerCase().includes(q);
+        spotlight.style.display = (sCat && sSearch) ? '' : 'none';
+    }
+
     document.querySelector('.project-count').textContent = v + ' project' + (v !== 1 ? 's' : '') + ' available';
+}
+
+/* Search input */
+document.getElementById('searchInput').addEventListener('input', applyFilters);
+
+/* Category filter buttons */
+document.querySelectorAll('[data-filter]').forEach(function(btn) {
+    btn.addEventListener('click', function() {
+        document.querySelectorAll('[data-filter]').forEach(function(b) { b.classList.remove('active'); });
+        btn.classList.add('active');
+        activeFilter = btn.dataset.filter;
+        applyFilters();
+    });
+});
+
+/* Sort buttons */
+document.querySelectorAll('[data-sort]').forEach(function(btn) {
+    btn.addEventListener('click', function() {
+        document.querySelectorAll('[data-sort]').forEach(function(b) { b.classList.remove('active'); });
+        btn.classList.add('active');
+        activeSort = btn.dataset.sort;
+        applyFilters();
+    });
 });
 
 /* Modal */
