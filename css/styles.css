@@ -174,7 +174,6 @@ h1,h2,h3,h4,h5,h6 { line-height: 1.2; font-weight: 700; }
 .contact-card img { width:48px; height:48px; border-radius:50%; object-fit:cover; }
 .contact-info .contact-name { font-size:.875rem; font-weight:700; color:var(--io-black); }
 .contact-info .contact-role { font-size:.75rem; color:var(--io-gray-400); margin-bottom:4px; }
-.contact-info .contact-email { font-size:.8rem; font-weight:600; color:var(--io-blue); }
 
 /* FOOTER */
 .site-footer { background:var(--io-black); color:rgba(255,255,255,.6); padding:32px 0; }
@@ -318,6 +317,111 @@ h1,h2,h3,h4,h5,h6 { line-height: 1.2; font-weight: 700; }
 /* SPOTLIGHT */
 .spotlight-section { margin-bottom:32px; }
 .spotlight-header { margin-bottom:16px; }
+
+/* HELP FILTERS */
+.help-filters { margin-top: 32px; text-align: center; }
+.help-label { font-size: .95rem; font-weight: 600; color: rgba(255,255,255,.85); margin-bottom: 16px; }
+.filter-chips { display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; max-width: 700px; margin: 0 auto; }
+.filter-chip { 
+    background: rgba(255,255,255,.12); 
+    border: 1px solid rgba(255,255,255,.2); 
+    color: #fff; 
+    padding: 8px 16px; 
+    border-radius: 100px; 
+    font-family: inherit; 
+    font-size: .8rem; 
+    font-weight: 600; 
+    cursor: pointer; 
+    transition: all .25s ease; 
+}
+.filter-chip:hover { background: rgba(255,255,255,.22); border-color: rgba(255,255,255,.35); transform: translateY(-2px); }
+.filter-chip.active { background: #fff; color: #0000d2; border-color: #fff; }
+
+/* IO EXAMPLE BOX */
+.io-example {
+    background: var(--io-blue-light);
+    border-left: 4px solid var(--io-blue);
+    border-radius: var(--radius-sm);
+    padding: 16px 20px;
+    margin: 20px 0;
+}
+.io-example h4 {
+    font-size: .85rem;
+    font-weight: 700;
+    color: var(--io-blue);
+    margin-bottom: 8px;
+    text-transform: uppercase;
+    letter-spacing: .03em;
+}
+.io-example p {
+    font-size: .9rem;
+    margin-bottom: 6px;
+    color: var(--io-black);
+}
+.io-example p:last-child { margin-bottom: 0; }
+
+/* CONTACT CARDS */
+.contact-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 16px;
+    margin-top: 12px;
+}
+.contact-card {
+    background: var(--io-white);
+    border: 1px solid var(--io-gray-200);
+    border-radius: var(--radius-md);
+    padding: 20px;
+    text-align: center;
+    transition: all var(--transition);
+}
+.contact-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0,0,0,.1);
+    border-color: var(--io-blue);
+}
+.contact-avatar {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: var(--io-blue-light);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 12px;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--io-blue);
+}
+.contact-name {
+    font-size: .9rem;
+    font-weight: 600;
+    color: var(--io-black);
+    margin-bottom: 12px;
+}
+.contact-email {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 6px 12px;
+    background: var(--io-blue);
+    color: var(--io-white) !important;
+    text-decoration: none;
+    border-radius: var(--radius-sm);
+    font-size: .75rem;
+    font-weight: 600;
+    transition: all var(--transition);
+}
+.contact-email:hover {
+    background: var(--io-blue-dark);
+    transform: translateY(-1px);
+}
+.contact-email svg {
+    width: 12px;
+    height: 12px;
+    color: var(--io-white) !important;
+    stroke: var(--io-white) !important;
+}
 .spotlight-badge { display:inline-flex; align-items:center; gap:6px; background:var(--io-blue-light); color:var(--io-blue); border:1px solid rgba(0,0,210,.15); border-radius:100px; padding:5px 16px; font-size:.75rem; font-weight:700; letter-spacing:.04em; text-transform:uppercase; }
 .spotlight-badge svg { flex-shrink:0; }
 .spotlight-card.spotlight-card { display:block; background:var(--io-white); border-radius:var(--radius-lg); overflow:hidden; box-shadow:var(--shadow-md); border:1.5px solid rgba(0,0,210,.12); transition:all var(--transition); text-decoration:none; color:inherit; cursor:pointer; }

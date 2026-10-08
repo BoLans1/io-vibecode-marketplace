@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ads App — iO VibeCode Marketplace</title>
+    <title>Ads App — iO AI Toolbox</title>
     <link rel="stylesheet" href="css/styles.css">
     <link rel="icon" type="image/svg+xml" href="brand assets/iO_Avatar.svg">
 </head>
@@ -19,7 +19,7 @@
                 <path d="M594.5,26c-158.22,0-286.5,128.27-286.5,286.5s128.28,286.5,286.5,286.5,286.5-128.27,286.5-286.5S752.73,26,594.5,26ZM594.5,464.51c-83.95,0-152.01-68.06-152.01-152.01s68.05-152.02,152.01-152.02,152.01,68.07,152.01,152.02-68.05,152.01-152.01,152.01Z"/>
             </svg>
             <span class="logo-divider"></span>
-            <span class="logo-text">VibeCode Marketplace</span>
+            <span class="logo-text">AI Toolbox</span>
         </a>
         <nav class="header-nav">
             <a href="index.html">Browse</a>
@@ -78,15 +78,34 @@
                 </div>
 
                 <!-- Description -->
+                                <!-- Description -->
                 <div class="description-section">
+                    <h2>What problem does this solve?</h2>
+                    <p>Managing advertising campaigns across multiple platforms (Google Ads, Meta, etc.) for multiple clients is time-consuming and error-prone. Operators waste hours switching between dashboards, manually compiling reports, and risk missing optimization opportunities.</p>
+
                     <h2>Description</h2>
-                    <p>Ads App is an internal advertising management platform built for a marketing agency. It is a SaaS web application that allows an operator (the agency) to manage and monitor the advertising campaigns of multiple clients from a single console.</p>
+                    <p>Ads App is an internal advertising management platform built for marketing agencies. It is a SaaS web application that allows an operator (the agency) to manage and monitor the advertising campaigns of multiple clients from a single console.</p>
                     <p>The platform integrates with major ad networks to pull real-time campaign data, enabling operators to track performance, adjust budgets, and optimize targeting — all from one unified dashboard.</p>
+                    
+                    <div class="io-example">
+                        <h4>Example</h4>
+                        <p><strong>Input:</strong> Connect your Google Ads and Meta Business accounts, select client campaigns to monitor.</p>
+                        <p><strong>Output:</strong> Unified dashboard showing all campaign metrics, budget alerts, and optimization suggestions in real-time.</p>
+                    </div>
 
-                    <h3>Who is this for?</h3>
-                    <p>This tool is designed for marketing teams and advertising operations specialists within iO who manage campaigns across multiple client accounts. It streamlines the workflow by centralizing campaign data and controls.</p>
+                    <h2>How to start</h2>
+                    <p>Getting started with Ads App requires some initial setup, but the process is straightforward. Follow these steps to get the platform running on your local development environment:</p>
+                    <ol>
+                        <li><strong>Clone the repository:</strong> Download the codebase from the internal GitHub repository. You'll need access to the iO development organization.</li>
+                        <li><strong>Install dependencies:</strong> Run <code>npm install</code> to download all required Node.js packages and libraries.</li>
+                        <li><strong>Database setup:</strong> Ensure PostgreSQL 14+ is running and create a new database for the application.</li>
+                        <li><strong>Configure API credentials:</strong> Create a <code>.env</code> file with your Google Ads API keys, Meta Business API tokens, and database connection strings.</li>
+                        <li><strong>Start the services:</strong> Run <code>docker-compose up</code> to launch the application, database, and any background services.</li>
+                        <li><strong>Access the dashboard:</strong> Open your browser and navigate to <code>localhost:3000</code> to access the unified campaign management interface.</li>
+                    </ol>
+                    <p><em>Note: API credentials must be obtained from Google Ads Manager and Meta Business Manager. Contact the platform maintainers if you need help with credential setup.</em></p>
 
-                    <h3>Dependencies &amp; Requirements</h3>
+                    <h2>What access is needed?</h2>
                     <ul>
                         <li>Node.js 18+ and npm</li>
                         <li>PostgreSQL 14+ database</li>
@@ -94,6 +113,32 @@
                         <li>Meta Business API access token</li>
                         <li>Docker (recommended for local development)</li>
                     </ul>
+
+                    <h2>Who can I connect with?</h2>
+                    <div class="contact-grid">
+                        <div class="contact-card">
+                            <div class="contact-avatar">BL</div>
+                            <div class="contact-name">Bo Lansdaal</div>
+                            <a href="mailto:bo.lansdaal@iodigital.com" class="contact-email">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <rect x="2" y="4" width="20" height="16" rx="2"/>
+                                    <path d="M22 6l-10 7L2 6"/>
+                                </svg>
+                                Contact
+                            </a>
+                        </div>
+                        <div class="contact-card">
+                            <div class="contact-avatar">BN</div>
+                            <div class="contact-name">Barry Nijhof</div>
+                            <a href="mailto:barry.nijhof@iodigital.com" class="contact-email">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <rect x="2" y="4" width="20" height="16" rx="2"/>
+                                    <path d="M22 6l-10 7L2 6"/>
+                                </svg>
+                                Contact
+                            </a>
+                        </div>
+                    </div>
                 </div>
 
                 <!-- Reviews & Feedback -->
@@ -245,8 +290,13 @@
                         <img src="Images/Personen/Bo.png" alt="Bo">
                         <div class="contact-info">
                             <div class="contact-name">Bo Lansdaal</div>
-                            <div class="contact-role">Lead Developer</div>
-                            <a href="mailto:bo.lansdaal@iodigital.com" class="contact-email">bo.lansdaal@iodigital.com</a>
+                            <a href="mailto:bo.lansdaal@iodigital.com" class="contact-email">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <rect x="2" y="4" width="20" height="16" rx="2"/>
+                                    <path d="M22 6l-10 7L2 6"/>
+                                </svg>
+                                Contact
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -265,7 +315,7 @@
                 <path d="M594.5,26c-158.22,0-286.5,128.27-286.5,286.5s128.28,286.5,286.5,286.5,286.5-128.27,286.5-286.5S752.73,26,594.5,26ZM594.5,464.51c-83.95,0-152.01-68.06-152.01-152.01s68.05-152.02,152.01-152.02,152.01,68.07,152.01,152.02-68.05,152.01-152.01,152.01Z"/>
             </svg>
         </div>
-        <span class="footer-text">&copy; 2026 iO Digital — VibeCode Marketplace</span>
+        <span class="footer-text">&copy; 2026 iO Digital — AI Toolbox</span>
     </div>
 </footer>
 

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Beacon — iO VibeCode Marketplace</title>
+    <title>Beacon — iO AI Toolbox</title>
     <link rel="stylesheet" href="css/styles.css">
     <link rel="icon" type="image/svg+xml" href="brand assets/iO_Avatar.svg">
 </head>
@@ -19,7 +19,7 @@
                 <path d="M594.5,26c-158.22,0-286.5,128.27-286.5,286.5s128.28,286.5,286.5,286.5,286.5-128.27,286.5-286.5S752.73,26,594.5,26ZM594.5,464.51c-83.95,0-152.01-68.06-152.01-152.01s68.05-152.02,152.01-152.02,152.01,68.07,152.01,152.02-68.05,152.01-152.01,152.01Z"/>
             </svg>
             <span class="logo-divider"></span>
-            <span class="logo-text">VibeCode Marketplace</span>
+            <span class="logo-text">AI Toolbox</span>
         </a>
         <nav class="header-nav">
             <a href="index.html">Browse</a>
@@ -77,15 +77,31 @@
                 </div>
 
                 <!-- Description -->
+                                <!-- Description -->
                 <div class="description-section">
+                    <h2>What problem does this solve?</h2>
+                    <p>Verifying analytics implementations manually is tedious and error-prone. QA teams spend hours clicking through websites, inspecting the console for dataLayer events, and documenting issues — often missing edge cases or intermittent tracking failures.</p>
+
                     <h2>Description</h2>
                     <p>Beacon is a program that gives users the ability to record steps on a website and have them automatically replayed. At each step, the program reads the dataLayer and shows which measurement points (tags, events, variables) are found.</p>
                     <p>This makes it an invaluable tool for QA testing of analytics implementations, allowing analysts and developers to verify that tracking is firing correctly at every user interaction without manual inspection.</p>
+                    
+                    <div class="io-example">
+                        <h4>Example</h4>
+                        <p><strong>Input:</strong> Record a user journey: Homepage → Product page → Add to cart → Checkout.</p>
+                        <p><strong>Output:</strong> Detailed report showing all dataLayer events fired at each step, with pass/fail indicators for expected tracking points.</p>
+                    </div>
 
-                    <h3>Who is this for?</h3>
-                    <p>Beacon is designed for analytics specialists, QA engineers, and front-end developers who need to validate dataLayer implementations on websites. It is especially useful during tag management audits and when verifying tracking setups for new features or page templates.</p>
+                    <h2>How to start</h2>
+                    <ol>
+                        <li>Install the Beacon Chrome extension</li>
+                        <li>Navigate to the website you want to test</li>
+                        <li>Click "Start Recording" and perform your user journey</li>
+                        <li>Click "Stop" and review the captured dataLayer events</li>
+                        <li>Save or export the report for documentation</li>
+                    </ol>
 
-                    <h3>Dependencies &amp; Requirements</h3>
+                    <h2>What access is needed?</h2>
                     <ul>
                         <li>Google Chrome browser (latest version)</li>
                         <li>Chrome DevTools Protocol access</li>
@@ -93,6 +109,32 @@
                         <li>Access to the target website in a test environment</li>
                         <li>Basic understanding of Google Tag Manager / dataLayer</li>
                     </ul>
+
+                    <h2>Who can I connect with?</h2>
+                    <div class="contact-grid">
+                        <div class="contact-card">
+                            <div class="contact-avatar">BN</div>
+                            <div class="contact-name">Barry Nijhof</div>
+                            <a href="mailto:barry.nijhof@iodigital.com" class="contact-email">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <rect x="2" y="4" width="20" height="16" rx="2"/>
+                                    <path d="M22 6l-10 7L2 6"/>
+                                </svg>
+                                Contact
+                            </a>
+                        </div>
+                        <div class="contact-card">
+                            <div class="contact-avatar">AM</div>
+                            <div class="contact-name">Aljosja van der Meulen</div>
+                            <a href="mailto:aljosja.vandermeulen@iodigital.com" class="contact-email">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <rect x="2" y="4" width="20" height="16" rx="2"/>
+                                    <path d="M22 6l-10 7L2 6"/>
+                                </svg>
+                                Contact
+                            </a>
+                        </div>
+                    </div>
                 </div>
 
                 <!-- Reviews & Feedback -->
@@ -239,8 +281,13 @@
                         <img src="Images/Personen/Barry.png" alt="Barry">
                         <div class="contact-info">
                             <div class="contact-name">Barry Nijhof</div>
-                            <div class="contact-role">Lead Developer</div>
-                            <a href="mailto:barry.nijhof@iodigital.com" class="contact-email">barry.nijhof@iodigital.com</a>
+                            <a href="mailto:barry.nijhof@iodigital.com" class="contact-email">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <rect x="2" y="4" width="20" height="16" rx="2"/>
+                                    <path d="M22 6l-10 7L2 6"/>
+                                </svg>
+                                Contact
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -258,7 +305,7 @@
                 <path d="M594.5,26c-158.22,0-286.5,128.27-286.5,286.5s128.28,286.5,286.5,286.5,286.5-128.27,286.5-286.5S752.73,26,594.5,26ZM594.5,464.51c-83.95,0-152.01-68.06-152.01-152.01s68.05-152.02,152.01-152.02,152.01,68.07,152.01,152.02-68.05,152.01-152.01,152.01Z"/>
             </svg>
         </div>
-        <span class="footer-text">&copy; 2026 iO Digital — VibeCode Marketplace</span>
+        <span class="footer-text">&copy; 2026 iO Digital — AI Toolbox</span>
     </div>
 </footer>
 

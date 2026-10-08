@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>iO VibeCode Marketplace</title>
+    <title>iO AI Toolbox</title>
     <link rel="stylesheet" href="css/styles.css">
     <link rel="icon" type="image/svg+xml" href="brand assets/iO_Avatar.svg">
 </head>
@@ -19,7 +19,7 @@
                 <path d="M594.5,26c-158.22,0-286.5,128.27-286.5,286.5s128.28,286.5,286.5,286.5,286.5-128.27,286.5-286.5S752.73,26,594.5,26ZM594.5,464.51c-83.95,0-152.01-68.06-152.01-152.01s68.05-152.02,152.01-152.02,152.01,68.07,152.01,152.02-68.05,152.01-152.01,152.01Z"/>
             </svg>
             <span class="logo-divider"></span>
-            <span class="logo-text">VibeCode Marketplace</span>
+            <span class="logo-text">AI Toolbox</span>
         </a>
         <nav class="header-nav">
             <a href="index.html">Browse</a>
@@ -36,7 +36,7 @@
             <span class="badge-dot"></span>
             Internal Platform
         </div>
-        <h1>iO VibeCode Marketplace</h1>
+        <h1>iO AI Toolbox</h1>
         <p class="subtitle">made possible with <em>Bonzai</em></p>
         <div class="search-wrapper">
             <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -44,6 +44,23 @@
                 <line x1="21" y1="21" x2="16.65" y2="16.65"/>
             </svg>
             <input type="text" class="search-bar" id="searchInput" placeholder="Search programs, projects, or tools…">
+        </div>
+        <div class="help-filters">
+            <p class="help-label">What do you need help with?</p>
+            <div class="filter-chips">
+                <button class="filter-chip" data-help="analyze">Analyze</button>
+                <button class="filter-chip" data-help="extract">Extract Data</button>
+                <button class="filter-chip" data-help="visualize">Visualize</button>
+                <button class="filter-chip" data-help="connect">Connect Tools</button>
+                <button class="filter-chip" data-help="workflow">Create Workflow</button>
+                <button class="filter-chip" data-help="improve">Improve Process</button>
+                <button class="filter-chip" data-help="content">Content & Copy</button>
+                <button class="filter-chip" data-help="client">Client Prep</button>
+                <button class="filter-chip" data-help="campaign">Campaign Analysis</button>
+                <button class="filter-chip" data-help="brand">Brand Compliance</button>
+                <button class="filter-chip" data-help="prompts">Reusable Prompts</button>
+                <button class="filter-chip" data-help="assistants">AI Assistants</button>
+            </div>
         </div>
     </div>
 </section>
@@ -258,7 +275,7 @@
                                 How can I add my project or program?
                                 <svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
                             </button>
-                            <div class="faq-answer"><div class="faq-answer-inner">Click the "Add program / project" button and fill out the submission form with a project name, description, header image, GitLab link, and contact info.</div></div>
+                            <div class="faq-answer"><div class="faq-answer-inner">Click the "Add program / project" button and fill out the comprehensive submission form. Include project details, problem description, examples, setup instructions, requirements, and contact information for both lead developer and co-creator.</div></div>
                         </li>
                     </ul>
                 </div>
@@ -315,25 +332,59 @@
                     <div class="banner-preview" id="bannerPreview"><img id="bannerPreviewImg" src="" alt="Banner preview"></div>
                 </div>
                 <div class="form-group">
-                    <label class="form-label" for="shortDesc">Short description <span class="required">*</span></label>
-                    <textarea class="form-textarea" id="shortDesc" rows="3" placeholder="Briefly describe what your project does…" required></textarea>
+                    <label class="form-label" for="problemSolved">What problem does this solve? <span class="required">*</span></label>
+                    <textarea class="form-textarea" id="problemSolved" rows="3" placeholder="Describe the specific problem or challenge your project addresses…" required></textarea>
+                    <span class="form-hint">Explain the pain point or inefficiency your project solves</span>
                 </div>
                 <div class="form-group">
-                    <label class="form-label" for="audience">Who is this for?</label>
-                    <textarea class="form-textarea" id="audience" rows="2" placeholder="Describe the target audience or team…"></textarea>
+                    <label class="form-label" for="description">Description <span class="required">*</span></label>
+                    <textarea class="form-textarea" id="description" rows="4" placeholder="Provide a detailed description of what your project does and how it works…" required></textarea>
                 </div>
                 <div class="form-group">
-                    <label class="form-label" for="dependencies">Dependencies &amp; Requirements</label>
-                    <textarea class="form-textarea" id="dependencies" rows="2" placeholder="e.g. Node.js 18+, Docker, Google Ads API key…"></textarea>
-                </div>
-                <div class="form-row">
-                    <div class="form-group">
-                        <label class="form-label" for="contactName">Contact person <span class="required">*</span></label>
-                        <input type="text" class="form-input" id="contactName" placeholder="Full name" required>
+                    <label class="form-label">Example</label>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label class="form-label" for="exampleInput">Input example</label>
+                            <textarea class="form-textarea" id="exampleInput" rows="2" placeholder="Describe what goes into your tool…"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label" for="exampleOutput">Output example</label>
+                            <textarea class="form-textarea" id="exampleOutput" rows="2" placeholder="Describe what your tool produces…"></textarea>
+                        </div>
                     </div>
-                    <div class="form-group">
-                        <label class="form-label" for="contactEmail">Contact email <span class="required">*</span></label>
-                        <input type="email" class="form-input" id="contactEmail" placeholder="name@iodigital.com" required>
+                    <span class="form-hint">Provide a concrete example of input and output to help users understand your project</span>
+                </div>
+                <div class="form-group">
+                    <label class="form-label" for="howToStart">How to start <span class="required">*</span></label>
+                    <textarea class="form-textarea" id="howToStart" rows="4" placeholder="Step-by-step instructions on how to get started with your project…" required></textarea>
+                    <span class="form-hint">Provide clear setup and getting started instructions</span>
+                </div>
+                <div class="form-group">
+                    <label class="form-label" for="accessNeeded">What access is needed?</label>
+                    <textarea class="form-textarea" id="accessNeeded" rows="3" placeholder="e.g. Node.js 18+, Docker, Google Ads API key, PostgreSQL database…"></textarea>
+                    <span class="form-hint">List technical requirements, API keys, software dependencies, etc.</span>
+                </div>
+                <div class="form-group">
+                    <label class="form-label">Who can I connect with?</label>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label class="form-label" for="leadName">Contact person <span class="required">*</span></label>
+                            <input type="text" class="form-input" id="leadName" placeholder="Full name" required>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label" for="leadEmail">Contact email <span class="required">*</span></label>
+                            <input type="email" class="form-input" id="leadEmail" placeholder="name@iodigital.com" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label class="form-label" for="coCreatorName">Second contact (optional)</label>
+                            <input type="text" class="form-input" id="coCreatorName" placeholder="Full name">
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label" for="coCreatorEmail">Second contact email (optional)</label>
+                            <input type="email" class="form-input" id="coCreatorEmail" placeholder="name@iodigital.com">
+                        </div>
                     </div>
                 </div>
                 <div class="form-group">
@@ -379,7 +430,7 @@
                 <path d="M594.5,26c-158.22,0-286.5,128.27-286.5,286.5s128.28,286.5,286.5,286.5,286.5-128.27,286.5-286.5S752.73,26,594.5,26ZM594.5,464.51c-83.95,0-152.01-68.06-152.01-152.01s68.05-152.02,152.01-152.02,152.01,68.07,152.01,152.02-68.05,152.01-152.01,152.01Z"/>
             </svg>
         </div>
-        <span class="footer-text">&copy; 2026 iO Digital — VibeCode Marketplace</span>
+        <span class="footer-text">&copy; 2026 iO Digital — AI Toolbox</span>
     </div>
 </footer>
 
